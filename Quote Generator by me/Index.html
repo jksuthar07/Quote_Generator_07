@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <!--Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+</head>
+<body>
+    <!--Main Container-->
+    <div class="container">
+
+        <h1>
+            <i class="fas fa-quote-left"></i>
+                <span class="quote" id="quote"></span>
+            <i class="fas fa-quote-right"></i>
+      
+
+        </h1>
+
+        <p class="author" id="author"></p>
+
+        <hr/>
+        <div class="button">
+            <!--button to tweet code-->
+            <a class="twitter" id="tweet" href="https://twitter.com/intent/tweet?text=Greetings" data-size="large" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+
+            <!--Onclick button to generate next quote-->
+            <button class="next" onclick="getnewQuote()">Next Quote</button>
+        </div>
+    </div>
+    
+    <!--js file-->
+    <script src="script.js"></script>
+</body>
+</html>
